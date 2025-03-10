@@ -5,6 +5,8 @@ import GlobalStyles from "./styles/GlobalStyles";
 
 import Bookings from "./pages/Bookings";
 import Cabins from "./pages/Cabins";
+import Users from "./pages/Users";
+import Settings from "./pages/Settings";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 
@@ -21,6 +23,8 @@ const App = () => {
             <Route path="dashboard" element={<Dashboard />} />
             <Route path="/homestay" element={<Cabins />} />
             <Route path="/bookings" element={<Bookings />} />
+            <Route path="/users" element={<Users />} />
+            <Route path="/settings" element={<Settings />} />
           </Route>
         </Routes>
       </BrowserRouter>
